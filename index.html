@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>David Lansonneur</title>
+</head>
+
+<body>
+    <header id="about-me">
+        <div id="root">
+            <div id="topnav" class="topnav">
+                <!-- Classic Menu -->
+                <nav role="navigation" id="topnav_menu">
+                    <a class="topnav_link" href="#about-me">ABOUT ME</a>
+                    <a class="topnav_link" href="#formation">FORMATION</a>
+                    <a class="topnav_link" href="#experiences">EXPERIENCES</a>
+                    <a class="topnav_link" href="#projects">PROJECTS</a>
+                    <a class="topnav_link" href="#contact" id="contact-margin">CONTACT</a>
+                </nav>
+
+                <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+                    <!-- Some spans to act as a hamburger -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+
+                <!-- Responsive Menu -->
+                <nav role="navigation" id="topnav_responsive_menu">
+                    <ul>
+                        <li><a href="/about">ABOUT ME</a></li>
+                        <li><a href="/contact-us">FORMATION</a></li>
+                        <li><a href="/privacy-policy">EXPERIENCES</a></li>
+                        <li><a href="/terms-and-conditions">PROJECTS</a></li>
+                        <li><a href="/terms-and-conditions">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="block_presentation">
+            <div class="logo-reseau">
+                <a href="https://www.facebook.com/dlansonneur/" target="_blank"><img
+                        src="images/Presentation/icons8-facebook-entouré-48.png" alt="logo facebook" /></a>
+                <a href="https://github.com/SheyShay/" target="_blank"><img
+                        src="images/Presentation/icons8-github-48.png" alt="logo github" /></a>
+                <a href="https://www.linkedin.com/in/david-lansonneur-05b40b226/" target="_blank"><img
+                        src="images/Presentation/icons8-linkedin-48.png" alt="logo linkedin" /></a>
+                <a href="https://www.instagram.com/dave_lansonneur/" target="_blank"><img
+                         src="images/Presentation/icons8-instagram-48.png" alt="logo instagram" /></a>
+            </div>
+            <div class="block-moi">
+                <h1>David Lansonneur</h1>
+                <h1>IT Developer</h1>
+                <p id="text-moi">
+                    Bonjour, je suis en en 1ère année de formation de développeur Informatique à CESI
+                    Brest.
+                    Je suis passioné par le Développement Web. Je souhaite en faire mon
+                    métier. Actuellement je recherche un stage du 25 avril au 17 juin
+                    2022. Je recheche également une alternance à partir de septembre 2022. J'ai pour ambition d'aller jusqu'a minimun bac +3.
+                </p>
+                <a href="documents/CV David Lansonneur.pdf" target="_blank" id="lien-resume">
+                        <img src="images/Presentation/icons8-download-32.png" alt="image telechargement" id="image-resume" />Resumes
+                </a>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
