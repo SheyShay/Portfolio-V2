@@ -32,13 +32,11 @@ ol {
 li {
   list-style: none;
   color: white;
-  font-size: 1.8em;
 }
 .block_presentation {
-  height: auto;
   display: flex;
   flex-direction: row;
-  padding-bottom: 10vh;
+  /* padding-bottom: 10vh; */
 }
 .logo-reseau {
   width: 4%;
@@ -49,14 +47,20 @@ li {
 .logo-reseau img {
   width: 100%;
 }
+.hover-reseau:hover{
+  background-color: #003b32;
+}
 .block-moi {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 1.6em;
+  font-size: 1.3em;
   width: 60%;
   text-align: center;
-  margin: 20vh auto;
+  margin-top: 20vh;
+  margin-right: 20%;
+  margin-left: auto;
+  margin-bottom: 15vh;
 }
 #text-moi {
   margin-bottom: 12%;
@@ -69,7 +73,7 @@ li {
     gap: 7%;
     color: white;
     border: 2px solid white;
-    background: #407281;
+    background: #003b32;
     width: 20%;
     height: 6vh;
     margin: auto;
@@ -97,6 +101,7 @@ li {
   }
   .block-moi {
     margin-top: 0vh;
+    margin-right: auto;
     font-size: 1.4em;
     width: 80%;
   }
@@ -115,13 +120,14 @@ li {
 }
 /*-------------------------------------------- NAVBAR ----------------------------------------------- */
 .topnav {
-  /* background-color: #003b32; */
+  /* background-color: #037e6b; */
+  background-color: #40817a;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 100%;
   height: 7%;
-  font-size: 3.5vh;
+  font-size: 1.3em;
   position: fixed;
 }
 #contact-margin {
@@ -143,15 +149,18 @@ li {
 }
 
 @media only screen and (max-width: 768px) {
+  #title-moi{
+    padding-top: 40px;
+  }
+  
   /* hide classic menu */
   #topnav_menu {
     display: none;
   }
   .topnav {
     font-size: 1em;
-    position: relative;
+    position: relative fixed;
   }
-
   #root {
     position: relative;
     overflow-x: hidden;
@@ -180,7 +189,7 @@ li {
     right: 0;
     top: 0;
     min-width: 50vw;
-    height: 100vh;
+    height: 45vh;
     padding: 56px 0 0;
     text-align: center;
     background: #ededed;
@@ -190,6 +199,7 @@ li {
 
   #topnav_responsive_menu li {
     padding: 12px 24px;
+    font-size: 1.5em;
   }
 
   #topnav_responsive_menu a {
@@ -246,5 +256,364 @@ li {
   /* change color when opening the menu */
   #topnav_hamburger_icon.open span {
     background: #333;
+  }
+}
+/*-------------------------------------------- FORMATION ----------------------------------------------- */
+
+.block-formation{
+  background-color: white;
+  color: black;
+  padding-top: 42px;
+  margin: auto;
+  padding-bottom: 10vh;
+}
+.title-formation{
+  font-size: 2em;
+  color: #40817a;
+  margin: auto;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+.block-etude{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.block-etude h3{
+  margin: 7px 0;
+}
+.block-etude p{
+  margin: 7px 0;
+}
+.block-etude img{
+  width: 45px;
+}
+.block-etude-gauche{
+  display: flex;
+  width: 43%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 80px;
+}
+.block-etude-milieu{
+  width: 5px;
+  background-color: black;
+}
+.block-etude-droite{
+  display: flex;
+  width: 43%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.block-diplomes{
+  background-color: #40817a;
+  color: white;
+  width: 80%;
+  padding-left: 10px;
+}
+.paragraphe-diplome{
+  font-size: 1.2em;
+}
+@media (max-width:1024px){
+  .block-etude{
+    font-size: 1em;
+    text-align: center;
+    flex-direction: column;
+  }
+  .block-formation{
+    padding-bottom: 4vh;
+  }
+  .block-diplomes{
+    width: 100%;
+    margin-bottom: 3vh;
+    padding: 0;
+  }
+  .block-etude-milieu{
+    display: none;
+  }
+  .block-etude{
+    flex-direction: column;
+  }
+  .block-etude-gauche, .block-etude-droite{
+    width: 100%;
+  }
+  .block-etude-gauche{
+    gap: 0px;
+  }
+}
+/*-------------------------------------------- COMPETENCES ----------------------------------------------- */
+.block-competences{
+  padding-top: 40px;
+  margin: auto;
+  padding-bottom: 10vh;
+}
+.block-competences h3{
+  font-size: 1.4em;
+}
+
+.title-competence{
+  font-size: 2em;
+  color: white;
+  margin: auto;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+.block-langage-outil{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.jpp img{
+  padding: 0 15px;
+  width: 60px;
+}
+.title-comp{
+  background-color: #003b32;
+  margin: 0;
+  padding: 5px 10px;
+}
+.block-logo{
+  padding: 0px 10px;
+}
+.block-comp{
+  width: 37%;
+  border-radius: 5px;
+  background: #407281;
+  padding-bottom: 10px;
+}
+#elephant{
+  height: 60px;
+}
+@media (max-width: 1024px){
+  .block-langage-outil{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .block-comp{
+    width: 100%;
+    padding: 0px;
+  }
+  .jpp img{
+    padding: 0 5px;
+    width: 60px;
+  }
+}
+/*-------------------------------------------- PROJECTS ----------------------------------------------- */
+.block-projects img{
+  width: auto;
+  height: 55%;
+}
+.fenetre-modale{
+  width: 20%;
+}
+.block-projects{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 1.1em;
+}
+#block-gauche{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#block-droit{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#title-xp{
+  margin: 15px 0 0 0;
+  font-size: 2em;
+}
+.block-paragraphe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #40817a;
+  margin: auto;
+}
+
+.block-paragraphe p{
+  width: 90%;
+}
+
+.block-projet{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #40817a;
+  height: 70vh;
+  padding: 2px;
+}
+@media (max-width: 1024px){
+  .block-projects{
+      flex-direction: column;
+      width: auto;
+      gap: 40px;
+  }
+  #block-gauche{
+      width: 100%;
+  }
+  #block-droit{
+      width: 100%;
+  }
+}
+
+/*-------------------------------------------- CONTACT ----------------------------------------------- */
+
+.block-contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+.block-reseau{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.block-reseau a{
+  font-size: 1.1em;
+  color: white;
+}
+#paragraphe-mail{
+  color: black;
+}
+.reseau{
+  display: flex;
+  flex-direction: row;
+}
+#mail{
+  width: 30%;
+}
+#mail p{
+  font-size: 1.2em;
+}
+.font-reseau{
+  width: 70%;
+}
+.font-reseau p{
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+}
+#title-contact{
+  font-size: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#facebook{
+  background: rgb(0, 195, 255);
+}
+#linkedin{
+  background: rgb(0, 68, 255);
+}
+#github{
+  background: rgb(33, 39, 41);
+}
+#instagram{
+  background: rgb(223, 82, 0);
+}
+@media(max-width: 1024px){
+  .block-contact{
+      flex-direction: column;
+  }
+  .block-reseau{
+      width: auto;
+  }
+  #facebook{
+      width: 100%;
+  }
+  #instagram{
+      width: 100%;
+  }
+  #github{
+      width: 100%;
+  }
+  #linkedin{
+      width: 100%;
+  }
+  #title-contact{
+    padding-top: 40px;
+  }
+}
+/*------------------------------------------- FORMULAIRE --------------------------------------------------- */
+#formulaire{
+  background: #40817a;
+  width: 50%;
+  display: flex;
+  text-align: center;
+}
+form{
+  max-width: 80%;
+  padding-top: 20px;
+}
+.feedback-input::placeholder{
+  color: white;
+}
+
+.feedback-input {
+  color:white;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #ffffff;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+
+.feedback-input:focus { border:2px solid #003b32; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#003b32;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#085e51; }
+
+@media (max-width:1024px){
+  #formulaire{
+    width: 100%;
+  }
+  form{
+    max-width: 100%;
+    padding-top: 20px;
   }
 }
